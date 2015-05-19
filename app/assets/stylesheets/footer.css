@@ -1,3 +1,4 @@
-footer{
-  background:black;
+footer{text-align: center;}
+ul.footer-list{
+  list-style-type: none;
 }

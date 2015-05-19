@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Curate</title>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <%= stylesheet_link_tag 'application.css', :media => "all"%>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <%if params[:controller] == "emails"%>
+      <%= yield %>
+    <%else%>
+      <%= render "layouts/nav.html.erb"%>
+      <%= yield %>
+      <%= render "layouts/footer.html.erb"%>
+    <%end%>
+  </body>
+</html>
