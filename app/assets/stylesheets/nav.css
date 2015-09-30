@@ -1,47 +1,2091 @@
-* {
+@charset "UTF-8";
+/* @import must be at top of file, otherwise CSS will not work */
+/*@import url("//hello.myfonts.net/count/2c3b91");*/
+/*@font-face {
+  font-family: "NeuzeitGro-Bol";
+  src: url(2C3B91_0_0.eot);
+  src: url(2C3B91_0_0.eot?#iefix) format("embedded-opentype"), url(2C3B91_0_0.woff) format("woff"), url(2C3B91_0_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: "NeuzeitGro-Lig";
+  src: url(2C3B91_1_0.eot);
+  src: url(2C3B91_1_0.eot?#iefix) format("embedded-opentype"), url(2C3B91_1_0.woff) format("woff"), url(2C3B91_1_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: "NeuzeitGro-Reg";
+  src: url(2C3B91_2_0.eot);
+  src: url(2C3B91_2_0.eot?#iefix) format("embedded-opentype"), url(2C3B91_2_0.woff) format("woff"), url(2C3B91_2_0.ttf) format("truetype");
+}
+/* line 35, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_variables.scss */
+/*.NeuzeitGro-Bol {
+  font-family: NeuzeitGro-Bol;
+  font-weight: normal;
+  font-style: normal;
+}
+
+ line 40, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_variables.scss 
+.NeuzeitGro-Lig {
+  font-family: NeuzeitGro-Lig;
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+/* line 45, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_variables.scss */
+/*.NeuzeitGro-Reg {
+  font-family: NeuzeitGro-Reg;
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+@-webkit-keyframes nav-in {
+  0% {
+    max-height: 0px;
+    padding-right: 0px;
+  }
+  1% {
+    max-height: 1500px;
+    padding-right: 30px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    max-height: 1500px;
+    padding-right: 30px;
+  }
+}
+@-moz-keyframes nav-in {
+  0% {
+    max-height: 0px;
+    padding-right: 0px;
+  }
+  1% {
+    max-height: 1500px;
+    padding-right: 30px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    max-height: 1500px;
+    padding-right: 30px;
+  }
+}
+@keyframes nav-in {
+  0% {
+    max-height: 0px;
+    padding-right: 0px;
+  }
+  1% {
+    max-height: 1500px;
+    padding-right: 30px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    max-height: 1500px;
+    padding-right: 30px;
+  }
+}
+@-webkit-keyframes nav-out {
+  0% {
+    max-height: 1500px;
+    padding-right: 30px;
+    opacity: 1;
+  }
+  99% {
+    max-height: 1500px;
+    padding-right: 30px;
+    opacity: 0;
+  }
+  100% {
+    max-height: 0px;
+    padding-right: 0px;
+    opacity: 0;
+  }
+}
+@-moz-keyframes nav-out {
+  0% {
+    max-height: 1500px;
+    padding-right: 30px;
+    opacity: 1;
+  }
+  99% {
+    max-height: 1500px;
+    padding-right: 30px;
+    opacity: 0;
+  }
+  100% {
+    max-height: 0px;
+    padding-right: 0px;
+    opacity: 0;
+  }
+}
+@keyframes nav-out {
+  0% {
+    max-height: 1500px;
+    padding-right: 30px;
+    opacity: 1;
+  }
+  99% {
+    max-height: 1500px;
+    padding-right: 30px;
+    opacity: 0;
+  }
+  100% {
+    max-height: 0px;
+    padding-right: 0px;
+    opacity: 0;
+  }
+}
+@media (max-width: 930px) {
+  #footer .beta ul li{
+    width:100%;
+  }
+  #footer .beta {
+    height:80% !important;
+    display:block;
+  }
+  #footer .beta ul li:first-child, #footer .beta ul li:nth-child(2) {
+    display:inline-block;
+    margin-top: 1%;
+    width:48%;
+  }
+  #footer .beta ul li:nth-child(3), #footer .beta ul li:nth-child(4) {
+    display:inline-block;
+    margin-top: 1%;
+    width:48%;
+  }
+  #footer .gamma{
+    bottom: -100px !important;
+    height:31px !important;
+  }
+  .image-right{
+    max-width:59% !important;
+    float:right;
+    display:block;
+  }
+  img#slideshow{
+    display:block;
+  }
+  div.partners-left{
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 1000px) {
+  .analytics > div:first-child, .analytics > div:nth-child(2) {
+    display:inline-block;
+    margin-top: 1%;
+    width:49%;
+  }
+  .analytics > div:nth-child(3), .analytics > div:nth-child(4) {
+    display:inline-block;
+    margin-top: 1%;
+    width:49%;
+  }
+  .analytic {
+    display: block;
+    margin-top: 1%;
+    margin-right:0 auto;
+  }
+  .location-list-item p{
+    margin-bottom:1%;
+  }
+}
+@media (max-width:955px) and (min-width:855px){
+  #footer .gamma{
+    height:31px;
+  }
+  #home-services > div {
+    width: 50% !important;
+    float: left;
+    margin-right: 0 !important;
+    margin-bottom: 3.44828%;
+  }
+  #home-services > div .home-right {
+    margin-top: 2%;
+  }
+  .image-right{
+    max-width:59% !important;
+    float:right;
+    display:block;
+  }
+  img#slideshow{
+    display:block;
+  }
+  div.platforms {
+    height: 470px !important;
+  }
+}
+@media (max-width:854px) and (min-width:826px){
+  .image-right{
+    max-width:59% !important;
+    float:right;
+    display:block;
+  }
+  div.platforms {
+    height: 470px !important;
+  }
+  img#slideshow{
+    display:block;
+  }
+  div.partners-left{
+    margin-left: 0 !important;
+  }
+  #home-services > div {
+    width: 50% !important;
+    float: left;
+    margin-right: 0 !important;
+    margin-bottom: 3.44828%;
+  }
+  #home-services > div .home-right {
+    margin-top: 2%;
+  }
+}
+@media (max-width: 825px){
+  #home-services > div {
+    width: 49% !important;
+    float: left;
+    margin-right: 0 !important;
+    margin-bottom: 3.44828%;
+  }
+  #home-services > div .home-right {
+    margin-top: 2%;
+  }
+  div.platforms {
+    height: 660px !important;
+  }
+  div.virgin-left {
+    width: 100% !important;
+    text-align:center;
+  }
+  div.partners-left {
+    width: 100% !important;
+    text-align:center;
+  }
+  .red-line {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image-right {
+    margin-top:8%;
+    max-width:100% !important;
+    float:none !important;
+  }
+  img#slideshow{
+    max-width:100% !important;
+    max-height:100% !important;
+    max-height:300px !important;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+@media (max-width:870px) and (min-width:712px){
+
+}
+@media (max-width:800px){
+  #footer .gamma{
+    height:31px;
+  }
+  #home-services > div {
+    width: 50% !important;
+    float: left;
+    margin-right: 0 !important;
+    margin-bottom: 3.44828%;
+  }
+  div.platforms {
+    height: 645px !important;
+  }
+}
+@media (max-width:700px){
+  #footer .gamma{
+    height:31px;
+  }
+  #home-services > div {
+    width: 49% !important;
+    float: left;
+    margin-right: 0 !important;
+    margin-bottom: 3.44828%;
+  }
+  div.platforms {
+    height: 550px !important;
+  }
+}
+@media (max-width:600px){
+  #home-services > div {
+    width: 49% !important;
+    float: left;
+    margin-right: 0 !important;
+    margin-bottom: 3.44828%;
+    height: 130px !important;
+  }
+  #home-services > div .home-right {
+    margin-left: 35% !important;
+    margin-top: 2%;
+  }
+  div.platforms {
+    height: 470px !important;
+  }
+}
+@media (max-width:500px){
+  .analytics > div:first-child, .analytics > div:nth-child(2) {
+    display:block;
+    margin-top: 1%;
+    width:100%;
+  }
+  .analytics > div:nth-child(3), .analytics > div:nth-child(4) {
+    display:block;
+    margin-top: 1%;
+    width:100%;
+  }
+  #home-services > div {
+    width: 100% !important;
+    float: left;
+    margin-right: 0 !important;
+    margin-bottom: -11% !important;
+  }
+  #home-services > div .home-right {
+    margin-left: 23% !important;
+    margin-top: 2%;
+  }
+}
+/* line 1, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Shift', Orator Std;
 }
-ul#nav {
-  width:100%;
-  list-style-type: none;
-}
-#nav li {
-  width:33%;
-  float:left;
-  border-right: 1px solid #eee;
-}
-#nav li:last-child {
-  border-right:none;
-}
-#nav li a {
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
-  background:#ddd;
-  padding:4% 10%;
-  font-size:1.35em;
-  text-decoration: none;
 }
-@media screen and (max-width: 768px) {
-  #menu {
-    width:1.4em;
+
+/* line 26, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 29, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 32, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 35, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 45, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_reset.scss */
+img {
+  image-rendering: optimizeSpeed;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* line 1, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_modules.scss */
+.line-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 24px;
+}
+/* line 11, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_modules.scss */
+.line-header:before {
+  content: "";
+  background: #e2e2e5;
+  height: 1px;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+/* line 22, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_modules.scss */
+.line-header > div {
+  background: #ffffff;
+  display: inline-block;
+  padding: 0 12px;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 32, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_modules.scss */
+.hero {
+  position:relative;
+  background-color:#ADD8E6;
+  height:630px !important;
+  width:100% !important;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 75px solid #ADD8E6;
+  position: relative;
+  left:46%;
+}
+/* line 44, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_modules.scss */
+/*.hero:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}*/
+/* line 56, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_modules.scss */
+.analytics > div {
+  width: 24%;
+  display: inline-block;
+  margin-top: 1%;
+}
+.analytics h4 {
+/*  font-family: NeuzeitGro-Bol;*/
+  font-size: 50px;
+}
+.analytics h1{
+/*  font-family: NeuzeitGro-Lig;*/
+  font-size: 50px;
+  color: white;
+}
+.analytics {
+  height: 350px;
+  background-color: #e01616;
+  background-size: cover;
+  background-position: 50% 10%;
+  text-align: center;
+}
+.analytics > div:nth-child(even){
+  margin-top:3%;
+}
+/* line 68, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_modules.scss */
+.hero.small {
+  height: 400px;
+}
+
+/* line 74, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_modules.scss */
+.center {
+  text-align: center;
+}
+
+/* line 1, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_base.scss */
+h1 {
+/*  font-family: NeuzeitGro-Lig;*/
+  font-size: 37px;
+  line-height: 1.4;
+  color: #6b6b76;
+  letter-spacing: -1px;
+}
+
+/* line 5, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_base.scss */
+h2 {
+/*  font-family: NeuzeitGro-Bol;*/
+  font-size: 30px;
+  line-height: 1.4;
+  color: #2e2e33;
+  letter-spacing: -1px;
+}
+/* line 118, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_mixins.scss */
+h2:after {
+  content: '';
+  background-color: #e01616;
+  border-radius: 100%;
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+}
+
+/* line 9, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_base.scss */
+h3 {
+/*  font-family: NeuzeitGro-Bol;*/
+  font-size: 24px;
+  line-height: 1.4;
+  color: #2e2e33;
+  letter-spacing: -1px;
+  position: relative;
+}
+/* line 132, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_mixins.scss */
+/*h3:after {
+  content: '';
+  margin-left: 4px;
+  background-color: #e01616;
+  border-radius: 2px;
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+}*/
+
+/* line 13, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_base.scss */
+h4 {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 18px;
+  line-height: 1.4;
+  color: #2e2e33;
+  letter-spacing: -1px;
+}
+
+/* line 17, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_base.scss */
+h5 {
+  /*font-family: NeuzeitGro-Reg;*/
+  font-size: 16px;
+  line-height: 1.4;
+  color: #6b6b76;
+}
+
+/* line 21, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_base.scss */
+p {
+  /*font-family: NeuzeitGro-Reg;*/
+  font-size: 16px;
+  line-height: 1.4;
+  color: #6b6b76;
+  margin-bottom: 16px;
+}
+
+/* line 28, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_base.scss */
+*,
+*:before,
+*:after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: geometricPrecision;
+}
+
+/* line 37, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_base.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 45, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_base.scss */
+body {
+  color: #6b6b76;
+  /*font-family: NeuzeitGro-Reg;*/
+  font-size: 16px;
+}
+
+/* line 53, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_base.scss */
+.container {
+  margin: 0 auto;
+}
+
+/* line 58, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_base.scss */
+main {
+  position: relative;
+}
+/* line 60, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_base.scss */
+main .container {
+  padding: 72px 48px;
+}
+
+/* line 3, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#body-pages-home.body-above #nav {
+  background: rgba(46, 46, 51, 0);
+}
+/* line 7, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#body-pages-home.body-above #nav-menu a {
+  color: white;
+}
+
+/* line 13, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss 
+nav#nav {
+  background-color: #e01616 !important;
+}*/
+
+/* line 16, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: background-color 350ms ease;
+  -moz-transition: background-color 350ms ease;
+  transition: background-color 350ms ease;
+  background: #2e2e33;
+  z-index: 100;
+}
+/* line 27, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav:before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  border-top: 4px solid rgba(10, 10, 11, 0.08);
+}
+
+/* line 36, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-logo {
+  width: 278px;
+  text-indent: -999999px;
+  height: 100%;
+  display: inline-block;
+  background-image: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  z-index: 999999;
+}
+
+/* line 49, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-open {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  padding-right: 30px;
+  padding-top: 26px;
+  margin-left: -283px;
+  z-index: -10;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(10, 10, 11, 0);
+  -webkit-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+/* line 66, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+.solid #nav-open {
+  color: #777783;
+}
+/* line 69, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+.solid #nav-open.active {
+  background-color: rgba(10, 10, 11, 0);
+}
+/* line 75, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-open.active {
+  background-color: #2e2e33;
+}
+/* line 78, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-open.active .ham {
+  background-color: #2e2e33;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 82, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-open.active .ham:before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 28px;
+}
+/* line 87, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-open.active .ham:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 28px;
+}
+@media (max-width: 925px) {
+  /* line 49, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+  #nav-open {
+    display: inline-block;
+  }
+}
+
+/* line 99, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-open-caption {
+  text-transform: capitalize;
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 15px;
+  line-height: 1.4;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(10, 10, 11, 0.15);
+  position: absolute;
+  top: 26px;
+  right: 75px;
+}
+@media (max-width: 700px) {
+  /* line 99, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+  #nav-open-caption {
+    display: none;
+  }
+}
+
+/* line 111, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-open-hamburger {
+  vertical-align: middle;
+  display: inline-block;
+  text-indent: -99999px;
+  height: 2px;
+  width: 25px;
+  background-color: #ffffff;
+  margin-left: 20px;
+  position: absolute;
+  right: 30px;
+  top: 36px;
+  -webkit-transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+/* line 124, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-open-hamburger:before, #nav-open-hamburger:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 0;
+  height: 2px;
+  width: 25px;
+  background-color: #ffffff;
+  -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -o-transform-origin: right center;
+  transform-origin: right center;
+  -webkit-transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+/* line 137, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-open-hamburger:after {
+  top: 10px;
+  -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -o-transform-origin: right center;
+  transform-origin: right center;
+}
+
+/* line 144, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-menu {
+  float: right;
+  display: inline-block;
+  padding-right: 30px;
+  opacity: 1;
+}
+/* line 150, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-menu li {
+  position: relative;
+  display: inline-block;
+  margin-right: 44px;
+  height: 70px;
+}
+/* line 156, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-menu li:before {
+  background-color: #ffffff;
+  height: 4px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+/* line 172, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-menu li:hover a, #nav-menu li.active a {
+  color: #ffffff;
+}
+/* line 175, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-menu li:hover:before, #nav-menu li.active:before {
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* line 181, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-menu li:last-child {
+  margin-right: 0;
+}
+/* line 189, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+#nav-menu a {
+  -webkit-transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 15px;
+  line-height: 1.4;
+  color: #777783;
+  text-shadow: 0 1px 1px rgba(10, 10, 11, 0.15);
+  text-decoration: none;
+  padding-top: 26px;
+  height: 70px;
+  display: block;
+}
+@media (max-width: 925px) {
+  /* line 144, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+  #nav-menu {
+    float: none;
+    width: 100%;
+    height: 1400px;
+    overflow: hidden;
+    background-color: rgba(10, 10, 11, 0.92);
+    opacity: 0;
+    max-height: 0;
+    padding-right: 0;
+  }
+  /* line 209, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+  #nav-menu li {
     display: block;
-    background:#ddd;
-    font-size:1.35em;
+    text-align: right;
+    margin-right: 0;
+  }
+  /* line 215, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+  #nav-menu.out {
+    -webkit-animation: nav-out 500ms 1 ease forwards;
+    -moz-animation: nav-out 500ms 1 ease forwards;
+    animation: nav-out 500ms 1 ease forwards;
+  }
+  /* line 219, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+  #nav-menu.active {
+    -webkit-animation: nav-in 500ms 1 ease forwards;
+    -moz-animation: nav-in 500ms 1 ease forwards;
+    animation: nav-in 500ms 1 ease forwards;
+  }
+  /* line 223, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+  #nav-menu.active li a {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  /* line 230, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+  #nav-menu.active li:nth-of-type(1) a {
+    -webkit-transition-delay: 80ms;
+    -moz-transition-delay: 80ms;
+    transition-delay: 80ms;
+  }
+  /* line 235, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+  #nav-menu.active li:nth-of-type(2) a {
+    -webkit-transition-delay: 120ms;
+    -moz-transition-delay: 120ms;
+    transition-delay: 120ms;
+  }
+  /* line 240, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+  #nav-menu.active li:nth-of-type(3) a {
+    -webkit-transition-delay: 160ms;
+    -moz-transition-delay: 160ms;
+    transition-delay: 160ms;
+  }
+  /* line 245, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+  #nav-menu.active li:nth-of-type(4) a {
+    -webkit-transition-delay: 200ms;
+    -moz-transition-delay: 200ms;
+    transition-delay: 200ms;
+  }
+  /* line 250, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+  #nav-menu.active li:nth-of-type(5) a {
+    -webkit-transition-delay: 240ms;
+    -moz-transition-delay: 240ms;
+    transition-delay: 240ms;
+  }
+  /* line 255, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+  #nav-menu.active li:nth-of-type(6) a {
+    -webkit-transition-delay: 280ms;
+    -moz-transition-delay: 280ms;
+    transition-delay: 280ms;
+  }
+  /* line 262, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+  #nav-menu li:before {
+    display: none;
+  }
+  /* line 265, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_nav.scss */
+  #nav-menu li a {
+    -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
+
+/* line 1, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+footer {
+  height: 250px;
+  position: relative;
+  background-color: #2e2e33;
+}
+div.container-left{
+  width:70%;
+  margin:0 !important;
+}
+
+@media (max-width: 700px) {
+  /* line 1, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer {
+    height: 620px;
+
+  }
+}
+/* line 9, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .alpha {
+  height: 210px;
+  text-align: center;
+}
+/* line 13, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .alpha .container {
+  border-top: 1px solid #e2e2e5;
+}
+/* line 17, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .alpha .signup-title {
+  margin-top: 50px;
+  font-size: 20px;
+  color: #5a5a63;
+  letter-spacing: -1px;
+}
+/* line 24, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .alpha .signup-form {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-left: 16.94915%;
+  border: 2px solid #eaeaec;
+  position: relative;
+  margin-top: 20px;
+}
+@media (max-width: 925px) {
+  /* line 24, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer .alpha .signup-form {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+/* line 36, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .alpha .signup-form input, #footer .alpha .signup-form label, #footer .alpha .signup-form button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+/* line 40, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .alpha .signup-form input {
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  padding: 14px 20px 10px 20px;
+  border: 0;
+  margin: 0;
+  background: transparent;
+  outline: none;
+  /*font-family: NeuzeitGro-Reg;*/
+  font-size: 16px;
+  color: #6b6b76;
+  box-shadow: 0 0 20px rgba(10, 10, 11, 0);
+  -webkit-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+/* line 56, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .alpha .signup-form input:focus {
+  cursor: text;
+  box-shadow: 0 1px 20px rgba(10, 10, 11, 0.1);
+}
+/* line 59, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .alpha .signup-form input:focus ~ label {
+  opacity: 0;
+}
+/* line 66, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .alpha .signup-form label, #footer .alpha .signup-form button {
+  -webkit-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  cursor: pointer;
+  opacity: 1;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+/* line 74, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .alpha .signup-form label {
+  font-size: 16px;
+  color: #c7c7cc;
+}
+/* line 77, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .alpha .signup-form label._hide {
+  opacity: 0;
+}
+/* line 81, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .alpha .signup-form button {
+  top: 10px;
+  left: auto;
+  right: 0;
+  border: 0;
+  background: transparent;
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 16px;
+  color: #6b6b76;
+}
+/* line 94, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .beta {
+  background-color: #2e2e33;
+  height: 300px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  /* line 94, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer .beta {
+    height: 338px;
+  }
+}
+/* line 103, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .beta .address {
+  width: 30px;
+  padding-top: 65px;
+  line-height: 1.4;
+}
+/* line 108, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .beta .address a {
+  text-decoration: none;
+  color: #ffffff;
+}
+@media (max-width: 700px) {
+  /* line 103, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer .beta .address {
+    padding-top: 35px;
+  }
+}
+/* line 117, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .beta .location-title {
+  padding-top: 20px;
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 30px;
+  line-height: 1.4;
+  color: #e2e2e5;
+}
+@media (max-width: 700px) {
+  /* line 117, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer .beta .location-title {
+    padding-top: 30px;
+  }
+}
+/* line 127, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .beta ul {
+  padding-top: 30px;
+}
+/* line 129, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .beta ul li {
+  width: 18%;
+  float: left;
+  margin-right: 1.5%;
+  position: relative;
+}
+@media (max-width: 925px) {
+  /* line 129, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer .beta ul li {
+    width: 18.3%;
+  }
+}
+/* line 137, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .beta ul li:first-child {
+  margin-left: 10%;
+}
+@media (max-width: 925px) {
+  /* line 137, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer .beta ul li:first-child {
+    margin-left: 0;
+  }
+}
+/* line 144, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .beta ul li:first-child a:after {
+  display: none;
+}
+/* line 148, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .beta ul li a,
+#footer .beta ul li a:link,
+#footer .beta ul li a:active,
+#footer .beta ul li a:visited {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 100%;
+  color: #6b6b76;
+  text-decoration: none;
+  display: block;
+}
+/* line 160, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .beta ul li a:hover,
+#footer .beta ul li a:link:hover,
+#footer .beta ul li a:active:hover,
+#footer .beta ul li a:visited:hover {
+  color: #ffffff;
+}
+/* line 164, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .beta ul li a:after,
+#footer .beta ul li a:link:after,
+#footer .beta ul li a:active:after,
+#footer .beta ul li a:visited:after {
+  content: '';
+  width: 1px;
+  background-color: #3d3d43;
+  height: 25px;
+  left: 2px;
+  top: 0;
+  position: absolute;
+}
+@media (max-width: 925px) {
+  /* line 164, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer .beta ul li a:after,
+  #footer .beta ul li a:link:after,
+  #footer .beta ul li a:active:after,
+  #footer .beta ul li a:visited:after {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  /* line 127, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer .beta ul {
+    padding-top: 15px;
+  }
+  /* line 183, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer .beta ul li {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  /* line 186, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer .beta ul li:last-child {
+    margin-bottom: 0;
+  }
+}
+/* line 192, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .beta .address {
+  /*font-family: NeuzeitGro-Reg;*/
+  font-size: 14px;
+  line-height: 1.4;
+  color: #f7f7f8;
+}
+/* line 196, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .gamma {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 31px;
+  display: block;
+  color: #6b6b76;
+  background-color: #36363b;
+}
+@media (max-width: 700px) {
+  /* line 196, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer .gamma {
+    height: 72px;
+  }
+}
+/* line 210, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .gamma .container {
+  padding: 6px;
+  /*font-family: NeuzeitGro-Reg;*/
+  font-size: 14px;
+  line-height: 1.4;
+  color: #6b6b76;
+}
+/* line 214, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .gamma .copyright {
+  float: left;
+  margin-left: 30px;
+}
+@media (max-width: 925px) {
+  /* line 214, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer .gamma .copyright {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 700px) {
+  /* line 214, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer .gamma .copyright {
+    margin-left: 0px;
+    float: none;
     text-align: center;
   }
-  #nav.js {
-    display: none;
-  }
-  nav ul {
-    width:100%;
-  }
-  #nav li {
-    width:100%;
-    border-right:none;
+}
+/* line 227, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .gamma .contact {
+  float: right;
+  margin-right: 30px;
+}
+@media (max-width: 925px) {
+  /* line 227, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer .gamma .contact {
+    margin-right: 15px;
   }
 }
-@media screen and (min-width: 768px) {
-  #menu {
-    display: none;
+@media (max-width: 700px) {
+  /* line 227, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+  #footer .gamma .contact {
+    margin-right: 0px;
+    float: none;
+    text-align: center;
+    padding-top: 8px;
   }
+}
+/* line 241, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .gamma .contact a,
+#footer .gamma .contact a:link,
+#footer .gamma .contact a:active,
+#footer .gamma .contact a:visited {
+  color: #6b6b76;
+  text-decoration: none;
+  display: inline-block;
+}
+/* line 249, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .gamma .contact a:hover,
+#footer .gamma .contact a:link:hover,
+#footer .gamma .contact a:active:hover,
+#footer .gamma .contact a:visited:hover {
+  color: #ffffff;
+}
+/* line 252, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .gamma .contact a:after,
+#footer .gamma .contact a:link:after,
+#footer .gamma .contact a:active:after,
+#footer .gamma .contact a:visited:after {
+/*  content: '•';*/
+  color: #6b6b76;
+}
+/* line 256, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_footer.scss */
+#footer .gamma .contact a:last-child:after,
+#footer .gamma .contact a:link:last-child:after,
+#footer .gamma .contact a:active:last-child:after,
+#footer .gamma .contact a:visited:last-child:after {
+  display: none;
+}
+
+/* line 1, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_home.scss */
+#main-home {
+  background: #ffffff;
+}
+
+/* line 5, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_home.scss */
+#home-hero {
+  background-image: url(../images/hero/home.jpg);
+}
+/* line 9, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_home.scss */
+#home-hero .header {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 42px;
+  line-height: 1.2;
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* line 19, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_home.scss */
+#home-hero .subheader {
+  /*font-family: NeuzeitGro-Reg;*/
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+@media (max-width: 925px) {
+  /* line 5, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_home.scss */
+  #home-hero {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/* line 30, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_home.scss */
+#home-services {
+  margin-top: 1.69492%;
+}
+/* line 15, /Users/christinaleuci/.rvm/gems/ruby-2.1.5/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+#home-services:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 35, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_home.scss */
+#home-services > div {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-bottom: 3.44828%;
+}
+/* line 40, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_home.scss */
+#home-services > div:nth-child(3n+3) {
+  width: 32.20339%;
+  float: right;
+  margin-right: 0;
+}
+/* line 43, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_home.scss */
+#home-services > div .home-left {
+  float: left;
+}
+/* line 46, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_home.scss */
+#home-services > div .home-right {
+  margin-left: 20%;
+  margin-top: 5% !important;
+}
+/* line 49, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_home.scss */
+#home-services > div .services-image {
+  width: 75px;
+  height: 75px;
+}
+/* line 53, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_home.scss */
+#home-services > div h4 {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 17px;
+  line-height: 1.2;
+  color: #e01616;
+}
+
+/* line 59, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_home.scss 
+.hero {
+  /*background: #e01616;*/
+/*}*/
+
+/* line 63, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_home.scss */
+.red-line {
+  background: #e01616;
+  width: 170px;
+  height: 1px;
+  margin-bottom: 1%;
+}
+
+/* line 70, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_home.scss */
+a {
+  text-decoration: none;
+  color: #2e2e33;
+}
+
+
+/* line 1, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+#main-tour {
+  background: #ffffff;
+}
+/* line 4, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+#main-tour .container.small {
+  max-width: 864px;
+}
+
+/* line 10, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+#tour-hero {
+  background: #e2e2e5;
+}
+/* line 12, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+#tour-hero > div {
+  text-align: center;
+}
+
+/* line 19, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+#tour-hero-header {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 37px;
+  line-height: 1.2;
+  color: #e01616;
+  display: inline-block;
+  border-bottom: 1px solid #e01616;
+  margin-bottom: 25px;
+}
+
+/* line 30, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+#tour-hero-subheader {
+  /*font-family: NeuzeitGro-Lig;*/
+  font-size: 18.5px;
+  line-height: 1.4;
+  color: #2e2e33;
+}
+
+/* line 34, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+#tour-second-hero {
+  background-image: url(/assets/hero/tour.jpg);
+}
+
+/* line 42, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+.tour-list-header {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/* line 52, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+.tour-list > div {
+  width: 49.15254%;
+  padding: 0 25px;
+  display: inline-block;
+}
+@media (max-width: 925px) {
+  /* line 58, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+  .tour-list > div {
+    width: 100%;
+    padding: 25px 0;
+  }
+}
+/* line 63, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+.tour-list ul {
+  background: #2e2e33;
+  border-top: 3px solid #e01616;
+  margin-top: 12px;
+}
+/* line 72, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+.tour-list li {
+  /*font-family: NeuzeitGro-Lig;*/
+  font-size: 14px;
+  line-height: 1.2;
+  color: #e2e2e5;
+  padding: 36px;
+  border-bottom: 1px solid #6b6b76;
+}
+/* line 79, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+.tour-list header {
+  padding-bottom: 12px;
+}
+
+/* line 86, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+.tour-quote-hero {
+  background: red;
+  padding: 100px 0;
+  text-align: center;
+}
+@media (max-width: 925px) {
+  /* line 86, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+  .tour-quote-hero {
+    padding: 50px;
+  }
+}
+@media (max-width: 700px) {
+  /* line 86, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+  .tour-quote-hero {
+    padding: 25px;
+  }
+}
+
+/* line 100, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+.tour-quote-hero-quote {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 37px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+/* line 104, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+.tour-quote-hero-author {
+  /*font-family: NeuzeitGro-Lig;*/
+  font-size: 18.5px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+/* line 108, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+p.quotation {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 50px;
+  line-height: 1.4;
+  color: #e01616;
+  /*font-family: "Times New Roman", Georgia, Serif;*/
+  margin-bottom: -5%;
+}
+
+/* line 113, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+p.quote {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 18px;
+  line-height: 1.4;
+  color: #6b6b76;
+}
+
+/* line 117, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_tour.scss */
+div.left {
+  margin-left: 15%;
+  margin-right: 7%;
+}
+
+/* line 2, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_clients.scss */
+#main-clients .container {
+  z-index: 2;
+  background: #ffffff;
+}
+/* line 5, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_clients.scss */
+#main-clients .container:first-child {
+  margin-top: -48px;
+}
+
+/* line 13, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_clients.scss */
+#clients-hero {
+  background-image: url(/assets/hero/clients.jpg);
+}
+/* line 17, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_clients.scss */
+#clients-hero > div {
+  text-align: center;
+}
+/* line 22, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_clients.scss */
+#clients-hero .header {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 42px;
+  line-height: 1.2;
+  color: #0a0a0b;
+}
+
+/* line 26, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_clients.scss */
+.line {
+  background: #2e2e33;
+  width: 1080px;
+  height: 1px;
+  margin-bottom: 1%;
+  margin-left: 5%;
+}
+
+/* line 33, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_clients.scss */
+.services-image {
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+}
+
+/* line 41, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_clients.scss */
+.case-studies {
+  background: #e01616;
+  height: 350px;
+  width: 100%;
+}
+
+/* line 46, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_clients.scss */
+p.quotation {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 50px;
+  line-height: 1.4;
+  color: #e01616;
+  /*font-family: "Times New Roman", Georgia, Serif;*/
+  margin-bottom: -3%;
+}
+
+/* line 2, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/posts/_index.scss */
+#main-posts-index .container {
+  z-index: 2;
+  background: #ffffff;
+}
+/* line 5, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/posts/_index.scss */
+#main-posts-index .container:first-child {
+  margin-top: -48px;
+}
+
+/* line 13, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/posts/_index.scss */
+#posts-index-hero {
+  background-image: url(/assets/hero/posts.jpg);
+}
+/* line 17, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/posts/_index.scss */
+#posts-index-hero > div {
+  text-align: center;
+}
+
+/* line 2, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_about.scss */
+#main-about .container {
+  z-index: 2;
+  background: #ffffff;
+}
+/* line 5, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_about.scss */
+#main-about .container:first-child {
+  margin-top: -48px;
+}
+
+/* line 13, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_about.scss */
+#about-hero {
+  background-image: url(/assets/hero/about.jpg);
+}
+/* line 17, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_about.scss */
+#about-hero > div {
+  text-align: center;
+}
+/* line 22, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_about.scss */
+#about-hero .header {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 42px;
+  line-height: 1.2;
+  color: #0a0a0b;
+}
+
+/* line 1, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_installations.scss */
+#main-installations {
+  padding-top: 2%;
+}
+
+/* line 4, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_installations.scss */
+.man-map {
+  background: #2e2e33;
+  min-height: 100%;
+}
+
+/* line 7, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  margin-bottom: -540px;
+}
+/* line 12, /Users/christinaleuci/.rvm/gems/ruby-2.1.5/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+.wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 15, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.wrapper:after {
+  content: '';
+  display: block;
+  height: 540px;
+}
+
+/* line 77, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.row {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e2e2e5;
+}
+/* line 84, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.row:last-child {
+  border-bottom: 0;
+}
+/* line 88, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.row div {
+  margin-bottom: 25px;
+}
+/* line 93, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.row .title {
+  float: left;
+  margin-left: 50.84746%;
+  margin-right: -100%;
+  width: 40.67797%;
+  float: left;
+  margin-right: 1.69492%;
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 18px;
+  line-height: 1.4;
+  color: #6b6b76;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+/* line 99, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.row .caption {
+  float: left;
+  margin-left: 16.94915%;
+  margin-right: -100%;
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+  clear: both;
+  /*font-family: NeuzeitGro-Reg;*/
+  font-size: 15px;
+  line-height: 1.4;
+  color: #6b6b76;
+  text-align: right;
+}
+/* line 106, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.row .rule {
+  float: left;
+  margin-left: 0;
+  margin-right: -100%;
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+  border-top: 1px solid #e2e2e5;
+  text-indent: -9999999px;
+}
+/* line 113, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.row .content {
+  width: 40.67797%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+@media (max-width: 925px) {
+  /* line 124, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+  .row .title {
+    float: left;
+    margin-left: 42.37288%;
+    margin-right: -100%;
+    width: 40.67797%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 130, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+  .row .caption {
+    float: left;
+    margin-left: 8.47458%;
+    margin-right: -100%;
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 136, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+  .row .rule {
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 6.77966%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 142, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+  .row .content {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+@media (max-width: 700px) {
+  /* line 151, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+  .row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /* line 156, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+  .row .title {
+    float: left;
+    margin-left: 8.47458%;
+    margin-right: -100%;
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+  /* line 164, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+  .row .caption {
+    float: left;
+    margin-left: 8.47458%;
+    margin-right: -100%;
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    text-align: left;
+  }
+  /* line 171, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+  .row .rule {
+    float: left;
+    margin-left: 8.47458%;
+    margin-right: -100%;
+    clear: both;
+  }
+  /* line 177, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+  .row .content {
+    float: left;
+    margin-left: 8.47458%;
+    margin-right: -100%;
+    clear: both;
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-bottom: 50px;
+  }
+}
+/* line 188, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.colors {
+  text-indent: -999999px;
+}
+/* line 190, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.colors div {
+  height: 40px;
+}
+/* line 193, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.colors .red {
+  background-color: #e01616;
+}
+/* line 196, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.colors .red-dark {
+  background-color: #c41313;
+}
+/* line 199, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.colors .black {
+  background-color: #0a0a0b;
+}
+/* line 202, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.colors .darker {
+  background-color: #2e2e33;
+}
+/* line 205, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.colors .dark {
+  background-color: #6b6b76;
+}
+/* line 208, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.colors .light {
+  background-color: #e2e2e5;
+}
+/* line 211, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.colors .lighter {
+  background-color: #f7f7f8;
+}
+/* line 214, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.colors .white {
+  border: 1px solid #e2e2e5;
+  background-color: #ffffff;
+}
+
+/* line 221, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.typography .header-xlrg {
+  /*font-family: NeuzeitGro-Lig;*/
+  font-size: 37px;
+  line-height: 1.4;
+  color: #6b6b76;
+  letter-spacing: -1px;
+}
+/* line 224, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.typography .header-lrg {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 30px;
+  line-height: 1.4;
+  color: #2e2e33;
+  letter-spacing: -1px;
+}
+/* line 118, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_mixins.scss */
+.typography .header-lrg:after {
+  content: '';
+  background-color: #e01616;
+  border-radius: 100%;
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+}
+/* line 227, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.typography .header-med {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 24px;
+  line-height: 1.4;
+  color: #2e2e33;
+  letter-spacing: -1px;
+  position: relative;
+}
+/* line 132, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_mixins.scss */
+.typography .header-med:after {
+  content: '';
+  margin-left: 4px;
+  background-color: #e01616;
+  border-radius: 2px;
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+}
+/* line 230, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.typography .header-sml {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 18px;
+  line-height: 1.4;
+  color: #2e2e33;
+  letter-spacing: -1px;
+}
+/* line 233, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.typography .body-text {
+  /*font-family: NeuzeitGro-Reg;*/
+  font-size: 16px;
+  line-height: 1.4;
+  color: #6b6b76;
+}
+/* line 236, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.typography .links {
+  position: relative;
+}
+/* line 154, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_mixins.scss */
+.typography .links a {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 16px;
+  line-height: 1.4;
+  color: #2e2e33;
+  display: inline;
+  position: relative;
+  text-decoration: none;
+}
+/* line 160, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_mixins.scss */
+.typography .links a:before {
+  content: '';
+  height: 1px;
+  width: 100%;
+  bottom: -2px;
+  left: 0;
+  position: absolute;
+  background-color: #6b6b76;
+  -webkit-transition: all 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: all 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+}
+/* line 172, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_mixins.scss */
+.typography .links a:hover:before {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* line 239, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.typography .nav-links {
+  position: relative;
+  display: inline-block;
+  margin-right: 44px;
+}
+/* line 184, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_mixins.scss */
+.typography .nav-links:last-child {
+  margin-right: 0;
+}
+/* line 187, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_mixins.scss */
+.typography .nav-links a {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 15px;
+  line-height: 1.4;
+  color: #f7f7f8;
+  text-shadow: 0 1px 1px rgba(10, 10, 11, 0.15);
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+@media (max-width: 925px) {
+  /* line 239, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+  .typography .nav-links {
+    display: block;
+    text-align: right;
+    margin-right: 0;
+  }
+}
+/* line 242, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.typography .eyebrow {
+  /*font-family: NeuzeitGro-Bol;*/
+  font-size: 16px;
+  line-height: 1.4;
+  color: #6b6b76;
+}
+/* line 245, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_style-guide.scss */
+.typography .lead-text {
+  /*font-family: NeuzeitGro-Lig;*/
+  font-size: 30px;
+  line-height: 1.7;
+  color: #c7c7cc;
+}
+/* line 95, /Users/christinaleuci/Programming/VID/VID/app/assets/stylesheets/_mixins.scss */
+.typography .lead-text:after {
+  content: '';
+  background-color: #e01616;
+  border-radius: 100%;
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  margin-left: -5px;
+}
+div.virgin{
+  height:100%;
+}
+div.virgin-left{
+  display: inline-block;
+  width: 30%;
+  margin-left: 10%;
+  vertical-align: top;
+}
+.virgin-right{
+  display:inline-block;
+}
+.bottom{
+  margin-top: -22%;
+}
+div.partners-left{
+  display:inline-block;
+  width:30%;
+  margin-left: 10%;
+  vertical-align: top;
+}
+div.client-div{
+  display:block;
+}
+.image-right{
+  display:inline-block;
+  float:right;
+  margin-right: 10%;
+}
+
+#virgin-image{
+  display:inline-block;
+  vertical-align: top;
+  margin-bottom: -1.5%;
+}
+div.platforms{
+  height: 775px;
+  display: block;
+}
+div.clients{
+  height: 430px;
+  display: block;
+}
+
+img#slideleft{
+  width:50px;
+  height:50px;
+  position: absolute;
+  right:547px;
+  top:1655px;
+}
+img#slideright{
+  width:50px;
+  height:50px;
+  position: absolute;
+  right: 0px;
+  top:1655px;
+}
+
+img#slideshow{
+  position:relative;
 }
